@@ -1,5 +1,6 @@
 # Pinched Footer
 Dynamic footer with animated link interactions.
+
 ![pinched-footer-screenshot](https://github.com/dajawhite/pinched-footer/assets/110269361/e7de2b36-2e5d-4437-99e6-cc02b2adf87d)
 
 ## Setup
