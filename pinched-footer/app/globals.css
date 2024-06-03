@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --primary: #1b2954;
+  --secondary: #ffea89;
+  --bgA1: #093a3b;
+  --noti: #e09b69;
+  --cta: #6aaa82;
+  --bgA2: #96dadd;
+  --bg: rgb(253,254,245);
+}
+@font-face {
+  font-family: 'montserrat';
+  src: url(/fonts/Montserrat2/Montserrat-VariableFont_wght.ttf) format('ttf');
+}
+.montserrat{
+  font-family: 'montserrat', sans-serif;
+  font-weight: 400;
+}
+.montserrat.bold-text{
+  font-weight: 700;
+}
+.montserrat.semi-bold-text{
+  font-weight: 600;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.animated-link{
+  transition: transform 0.3s ease-in-out;
+}
+
+.animated-link:hover{
+  transform: scale(0.95);
+}
+
+.underline-link{
+  position: relative;
+  display: inline-block;
+}
+
+.underline-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  transition: width 0.3s;
+}
+
+a:hover .underline-link::after{
+  width: 100%
+}
+
+.oswald{
+  font-family: 'oswald', sans-serif;
+}
+/* For regular text */
+.oswald.regular-text {
+  font-weight: 400; /* Regular */
+}
+
+/* For text that should be semi-bold */
+.oswald.semi-bold-text {
+  font-weight: 600; /* SemiBold */
+  line-height: 96px;
+}
+
+/* For bold text */
+.oswald.bold-text {
+  font-weight: 700; /* Bold */
+}
+
+/* For heavy text */
+.oswald.heavy-text {
+  font-weight: 900; /* Heavy Regular */
+}
+
+.text-primary{
+  color: var(--primary);
+  border-color: var(--primary);
+}
